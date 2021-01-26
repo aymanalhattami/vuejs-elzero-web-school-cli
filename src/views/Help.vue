@@ -1,18 +1,27 @@
 <template>
     <div class="out-help">
-        <h1>{{ pageName }}</h1>
+        <h1 v-colorRed>{{ pageName }}</h1>
         <p>{{ pageDescription }}</p>
     </div>
 </template>
 
 <script>
 export default {
+    name: 'help',
+
     data: function(){
         return {
             pageName: 'Help Center',
             pageDescription: "Help Center Page"
         };
     },
-    name: 'help'
+
+    directives: {
+        colorRed: {
+            bind: function(el){
+                el.style.color = "red";
+            }
+        }
+    }
 }
 </script>
