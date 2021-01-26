@@ -6,6 +6,7 @@ import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import './scss/main.scss';
 import 'normalize.css';
+import './fitlers'; // global filter
 
 Vue.config.productionTip = false;
 
