@@ -5,5 +5,9 @@ Vue.filter('uppercase', function (v){
 });
 
 Vue.filter('reverse', function(v){
-    return v.splite("").reverse().join("");
+    return v.split("").reverse().join("");
+});
+
+Vue.filter('shorten', function(value, textLength, suffix){
+    return value.substring(0, textLength) + suffix;
 });
