@@ -5,9 +5,9 @@
     <welcome-message />
 
     <div class="row">
-        <div class="col-md-4">one</div>
-        <div class="col-md-4">two</div>
-        <div class="col-md-4">two</div>
+        <div class="col-md-4" v-format="60">one</div>
+        <div class="col-md-4" v-format.bold="40">two</div>
+        <div class="col-md-4" v-format.bold.red="30">three</div>
     </div>
   </div>
 </template>
